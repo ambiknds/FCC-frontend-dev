@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="expires" content="-1"/>
+    <style>
+    ol,ul{list-style:none;margin:0px;padding:0px;}
+    div#__loginbox{width:200px}
+    div#__loginbox input[type="text"],input[type="password"]{
+             border: 1px solid #CCCCCC;
+             padding-top:3px;
+             padding-bottom: 3px;
+             width: 200px;
+             font-size: 11px !important;
+             line-height:15px;
+             margin-bottom:15px;
+    }
+    div#__loginbox label{
+         float:left;
+    }
+    div#__loginbox input[type="submit"]{
+         margin-bottom:15px;
+    }
+    div#__loginbox a{
+         margin-bottom:15px;
+    }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+        <center>
+        
+        <div>
+        <h3>{company_logo}</h3>
+        <h2>Captive Portal</h2>
+        <div id="__loginbox"></div>
+        </div>
+        </center>
+        <div id="request-url" style="display:none;">{url}</div>
+        <script>
+        var redirect_url = document.getElementById("request-url").innerHTML;
+        </script>
+
+</body>
+</html>
